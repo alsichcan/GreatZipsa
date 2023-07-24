@@ -9,8 +9,8 @@ Python Crawling Script for Short-term Subletting Service
 🔸김성진: Architectural Engineering Major, Real Estate Agent, Product Development  
 ⏰ Duration: 3 Months (Jul 2022 - Oct 2022) 
 
-![Short-term Rental Posts Counts and Ratio](https://github.com/alsichcan/GreatZipsa/assets/37293866/6b296c9e-88e8-4f9b-afcb-64275b54a579)
-![Monthly Short-term Rental Posts Counts and Ratio](https://github.com/alsichcan/GreatZipsa/assets/37293866/dda5c2d1-15b3-4a66-a962-fc050af2dd04)
+![Short-term Rental Posts Counts and Ratio](https://github.com/alsichcan/GreatZipsa/assets/37293866/f9b2d826-3fe8-4041-a0d3-060c165c1add)
+![Monthly Short-term Rental Posts Counts and Ratio](https://github.com/alsichcan/GreatZipsa/assets/37293866/6050d13c-32b0-46c8-8428-585b61680b54)
 
 ## Description
 ### 🌐 Short-term Subletting Service  
