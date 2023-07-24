@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- SEO -->
+    <title>위대한집사 : 오션뷰 거점 오피스</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta name="description" content="오션뷰 거점 오피스 위대한집사와 함께 해요">
+{#    <meta name="google-site-verification" content="QSdmqLO5yfs7jRN4-pYDgw_whCODJk2RH30UM5C1q3Q" />#}
+{#    <meta name="naver-site-verification" content="24546991bfe132fea743a64166231f410da7943f"/>#}
+{#    <meta name="facebook-domain-verification" content="e9p88y6fyg95cqo5cf20bgoyx22uyd"/>#}
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="greatzipsa.com"/>
+    <meta property="og:site_name" content="위대한집사"/>
+    <meta property="og:title" content="위대한집사 : 오션뷰 거점 오피스"/>
+    <meta property="og:description" content="오션뷰 거점 오피스 위대한집사와 함께 해요"/>
+    <meta property="og:image" content="{% static 'img/preview.png' %}"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:url" content="greatzipsa.com"/>
+    <meta name="twitter:title" content="위대한집사 : 오션뷰 거점 오피스"/>
+    <meta name="twitter:description" content="오션뷰 거점 오피스 위대한집사와 함께 해요"/>
+    <meta name="twitter:image" content="{% static 'img/preview.png' %}"/>
+    <link rel="canonical" href="https://greatzipsa.com"/>
+    <!-- End SEO -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicon -->
+    <link rel="manifest" href="{% static 'img/favi/manifest.json' %}">
+    <link rel="shortcut icon" href="{% static 'img/favi/favicon.ico' %}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/favi/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/favi/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/favi/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/favi/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/favi/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/favi/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/favi/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/favi/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favi/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'img/favi/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favi/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favi/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favi/favicon-16x16.png' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'img/favi/ms-icon-144x144.png' %}">
+    <meta name="theme-color" content="#FFFFFF">
+    <!-- End Favicon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base/modal.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    {% block css %}
+    {% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <header>
+        <div class="header_container section_container">
+            <div class="logo_wrapper">
+                <a href="/">
+                    <img src="{% static 'img/logo.svg' %}" alt="로고">
+                </a>
+            </div>
+            <div class="menu_wrapper">
+                <ul class="menu">
+                    <li><a href="/#section_value">위대한집사는?</a></li>
+                    <li><a href="/#section_items">위대한오피스</a></li>
+                    <li><a href="/#section_question">자주 묻는 질문</a></li>
+                    <li><button class="header_ask">문의하기</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+{% block content %}
+{% endblock %}
+
+    <div id="modal_ask" class="modal_wrapper">
+        <div id="ask_modal" class="modal">
+            <div class="modal_container">
+                <div class="modal_header">
+                    <p>문의하기</p>
+                    <p>해결되지 못한 궁금증들을 직접 문의해주세요!<br>최대한 빠른 시일 내에 회신드리도록 하겠습니다.</p>
+                </div>
+                <div class="modal_divider"></div>
+                <form class="modal_body" method="post">
+                    {% csrf_token %}
+                    <div class="modal_item">
+                        <div class="modal_title">이름*</div>
+                        <input id="modal_name" class="modal_form" type="text" placeholder="홍길동"></input>
+                    </div>
+                    <div class="modal_item">
+                        <div class="modal_title">전화번호*</div>
+                        <input id="modal_number" class="modal_form" type="tel"
+                               placeholder="01012345678 ('-' 없이 입력)"></input>
+                    </div>
+                    <div class="modal_item">
+                        <div class="modal_title">문의내용</div>
+                        <input id="modal_question" class="modal_form" type="text" placeholder="내용을 입력해주세요"></input>
+                    </div>
+                </form>
+                <div class="modal_footer">
+                    <p>*해당 칸은 반드시 입력해주세요.</p>
+                    <button id="button_cancel" type="button">뒤로 가기</button>
+                    <button id="button_question" type="button">문의 신청하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_container section_container">
+            <div class="logo_wrapper">
+                <a href="/">
+                    <img src="{% static 'img/logo.svg' %}" alt="로고">
+                </a>
+            </div>
+            <div>
+                <ul class="info">
+                    <li>상호명: 위대한집사 주식회사 (대표: 박지상)</li>
+                    <li>업종: 데이터베이스 및 온라인 정보 제공업</li>
+                    <li>사업자등록번호: 243-86-02521</li>
+                    <li>주소: 서울특별시 관악구 남부순환로1921-1 범산빌딩 401-E5호</li>
+                    <li>고객 문의: greatzipsa.com@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/gallery.js' %}"></script>
+    <script src="{% static 'js/work_gallery.js' %}"></script>
+    <script src="{% static 'js/modal.js' %}"></script>
+
+</body>
+</html>

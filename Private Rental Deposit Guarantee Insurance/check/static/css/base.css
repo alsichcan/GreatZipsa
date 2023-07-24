@@ -1,0 +1,14 @@
+* {
+    font-family: Pretendard !important;
+}
+
+body{
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+
+    background: linear-gradient(159.83deg, #9CFCF8 -8.63%, #7388FB 106.39%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

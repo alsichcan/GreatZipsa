@@ -1,0 +1,60 @@
+@font-face{
+    font-family: 'Apple SD Gothic Neo';
+    src: url("../../fonts/AppleSDGothicNeoM.ttf") format("truetype")
+}
+
+@font-face{
+    font-family: 'NanumSquareOTF';
+    src: url("../../fonts/NanumSquareR.ttf") format("truetype")
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Apple SD Gothic Neo', 'NanumSquareOTF';
+}
+
+header, section, footer{
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_container{
+    width: 320px;
+}
+
+
+.section_title{
+    width: 100%;
+    height: 64px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_title > p:first-child{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 149%;
+    text-align: center;
+
+    color: #BEBEBB;
+}
+
+.section_title > p:last-child{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 149%;
+
+    text-align: center;
+}

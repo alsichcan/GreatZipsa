@@ -1,0 +1,63 @@
+header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+
+    z-index: 100;
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_wrapper{
+    width: 168px;
+    height: 40px;
+}
+
+.menu{
+    width: 456px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.menu > li > a{
+    padding: 4px 8px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #222222;
+}
+
+.header_ask{
+    width: 94px;
+    height: 24px;
+
+    /* blue_gradient */
+    background: linear-gradient(346.53deg, #111FCD 16.51%, #2288F4 101.53%);
+    border-radius: 100px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #F4F4F4;
+}
+
+@media (min-width: 640px) {
+
+}

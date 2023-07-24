@@ -1,0 +1,31 @@
+#section_cta{
+    height: 34px;
+
+    position: fixed;
+    bottom: 26px;
+
+    z-index: 5;
+}
+
+.cta_container{
+    height: 100%;
+}
+
+.button_action {
+    width: 320px;
+    height: 34px;
+
+    background: linear-gradient(346.53deg, #111FCD 16.51%, #2288F4 101.53%);
+    border-radius: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #F4F4F4;
+}

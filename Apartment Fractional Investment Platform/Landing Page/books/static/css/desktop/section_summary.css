@@ -1,0 +1,36 @@
+#summary{
+    width: auto;
+    height: 540px;
+    min-width: 1200px;
+    background-color: #0e56f4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary_container{
+    width: 1200px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary_container p{
+    font-family: "Noto Sans KR", serif;
+    font-size: 40px;
+    line-height: 72px;
+    text-align: center;
+    color: white;
+}
+
+.summary_container p span{
+    font-weight: bold;
+}
+
+.summary_container mark {
+    background-color: white;
+    color: #0e56f4;
+}

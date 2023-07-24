@@ -1,0 +1,143 @@
+.float_book {
+    width: 328px;
+    height: 56px;
+    min-width: 328px;
+
+    position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book_form {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.form_input {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #BECBD7;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: "Noto Sans KR", serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 16px;
+    letter-spacing: 0.05em;
+
+    display: inline;
+    outline: none;
+    color: black;
+}
+
+.form_input::placeholder {
+    color: #98A3B1;
+}
+
+.button_submit {
+    width: 56px;
+    height: 100%;
+    padding: 0px;
+
+    position: absolute;
+    right: 0;
+    display: inline;
+    box-sizing: border-box;
+
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.button_submit > .mobile {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 0px auto;
+}
+
+.button_submit > .tablet{
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .float_book {
+        width: 600px;
+        height: 80px;
+
+        position: fixed;
+        bottom: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book_form {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .form_input {
+        width: 100%;
+        height: 100%;
+
+        border: 1px solid #BECBD7;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        font-family: "Noto Sans KR", serif;
+        font-size: 24px;
+        line-height: 24px;
+        padding-left: 24px;
+        letter-spacing: 0.05em;
+
+        display: inline;
+        outline: none;
+        color: black;
+    }
+
+    .form_input::placeholder {
+        color: #98A3B1;
+    }
+
+    .button_submit {
+        width: 80px;
+        height: 100%;
+        padding: 0px;
+
+        position: absolute;
+        right: 0;
+        display: inline;
+        margin-left: -10px;
+        box-sizing: border-box;
+
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    .button_submit > .mobile{
+        display: none;
+    }
+
+    .button_submit > .tablet {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 0px auto;
+    }
+}

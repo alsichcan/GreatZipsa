@@ -1,0 +1,35 @@
+header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+
+    z-index: 100;
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_wrapper{
+    width: 112px;
+    height: 24px;
+}
+
+.header_ask{
+    width: 96px;
+    height: 24px;
+
+    /* blue_gradient */
+    background: linear-gradient(346.53deg, #111FCD 16.51%, #2288F4 101.53%);
+    border-radius: 100px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #F4F4F4;
+}

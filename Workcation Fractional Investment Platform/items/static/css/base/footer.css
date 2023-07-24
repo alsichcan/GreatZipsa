@@ -1,0 +1,26 @@
+footer{
+    background-color: black;
+    padding: 20px 0 20px 0;
+}
+
+
+.footer_container{
+    height: 240px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.info > li {
+    font-size: 16px;
+    color: white;
+}

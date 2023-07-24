@@ -1,0 +1,159 @@
+#section_items{
+    height: 646px;
+
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.item_container{
+    height: 498px;
+    margin-top: 62px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_list{
+    width: 100%;
+
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.item_list::-webkit-scrollbar{
+    display: none;
+}
+
+.item{
+    width: 280px;
+    height: 372px;
+
+    position: relative;
+
+    margin-right: 16px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    overflow: hidden;
+    display:inline-block;
+}
+
+.item_wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+
+.item_image{
+    width: 100%;
+    height: 240px;
+
+    position: relative;
+}
+
+.item_image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.item_status{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 104px;
+    height: 32px;
+
+    background: #111FCD;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 22px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_status > p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.item_body{
+    width: 100%;
+    height: 132px;
+
+    padding: 12px 12px 16px 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.item_subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #BEBEBE;
+}
+
+.item_divider{
+    width: 256px;
+    height: 2px;
+
+    border-top: 2px solid #444444;
+}
+
+.item_price_wrapper{
+    width: 256px;
+    height: 28px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.item_share{
+    margin-right: 8px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #717171;
+}
+
+.item_price{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #222222;
+}

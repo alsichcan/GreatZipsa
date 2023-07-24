@@ -1,0 +1,89 @@
+#summary {
+    width: auto;
+    height: 370px;
+    min-width: 360px;
+    background-color: #0e56f4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary_container {
+    width: 360px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary_container > .mobile{
+    display: block;
+}
+
+.summary_container > .mobile p {
+    font-family: "Noto Sans KR", serif;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+}
+
+.summary_container > .mobile p span{
+    font-weight: bold;
+}
+
+.summary_container > .mobile p mark {
+    background-color: white;
+    color: #0e56f4;
+}
+
+.summary_container > .tablet{
+    display: none;
+}
+
+
+@media (min-width: 600px) {
+    #summary {
+        width: auto;
+        height: 512px;
+        background-color: #0e56f4;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .summary_container {
+        width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .summary_container > .tablet {
+        display: block;
+    }
+
+    .summary_container > .tablet p {
+        font-family: "Noto Sans KR", serif;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        color: white;
+    }
+
+    .summary_container > .tablet p span {
+        font-weight: bold;
+    }
+
+    .summary_container > .tablet p mark {
+        background-color: white;
+        color: #0e56f4;
+    }
+
+    .summary_container > .mobile{
+        display: none;
+    }
+}

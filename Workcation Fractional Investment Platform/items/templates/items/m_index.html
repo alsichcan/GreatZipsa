@@ -1,0 +1,327 @@
+{% extends 'items/m_base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="section_hero">
+        <div class="section_container">
+            <div class="hero_cta_wrapper">
+                <div class="hero_cta_message">
+                    <p>워케이션에 최적화된 공간,</p>
+                    <p>오션뷰 거점 오피스<br>위대한집사와 함께 해요.</p>
+                </div>
+                <a class="hero_cta_button" href="#section_items">
+                    <p>위대한오피스 보러가기</p>
+                    <div><img src="{% static 'img/ask.svg' %}"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_value">
+        <div class="value_container section_container">
+            <div class="section_title">
+                <p>휴양지 부동산의 새로운 패러다임</p>
+                <p>오션뷰 거점 오피스</p>
+            </div>
+            <div class="value_list">
+                <div class="value_item">
+                    <div class="value_item_image">
+                        <img src="{% static 'img/value_2.jpg' %}">
+                    </div>
+                    <div class="value_item_body">
+                        <div class="value_item_title">
+                            휴가공간으로 사용하세요
+                        </div>
+                        <div class="value_item_divider"></div>
+                        <div class="value_item_text">
+                            가족들과 함께하는 주말 휴가를 나만의 공간에서 누리세요.
+                            원하는 때에 무료로 연 12박의 숙박을 신청할 수 있어요.
+                        </div>
+                    </div>
+                </div>
+                <div class="value_item">
+                    <div class="value_item_image">
+                        <img src="{% static 'img/value_1.jpg' %}">
+                    </div>
+                    <div class="value_item_body">
+                        <div class="value_item_title">
+                            업무공간으로 대여하세요
+                        </div>
+                        <div class="value_item_divider"></div>
+                        <div class="value_item_text">
+                            가족들과 함께하는 주말 휴가를 나만의 공간에서 누리세요.
+                            원하는 때에 연 12박의 숙박을 무료로 신청할 수 있어요.
+                        </div>
+                    </div>
+                </div>
+                <div class="value_item">
+                    <div class="value_item_image">
+                        <img src="{% static 'img/value_3.jpg' %}">
+                    </div>
+                    <div class="value_item_body">
+                        <div class="value_item_title">
+                            소액자금으로 소유하세요
+                        </div>
+                        <div class="value_item_divider"></div>
+                        <div class="value_item_text">
+                            큰 자금이 묶이는 것이 부담스러운 부동산,
+                            이제는 소액자금으로 부담 없이 나만의 휴양지 거점 오피스를 소유하세요.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_items">
+        <div class="item_container section_container">
+            <div class="section_title">
+                <p>여유로운 휴가와 만족스런 수익을 위한</p>
+                <p>최고의 선택</p>
+            </div>
+
+            <div class="item_list">
+                {% for item in items %}
+                    <a href="/details/{{ item.pk }}/" class="item">
+                        <div class="item_wrapper">
+                            <div class="item_image">
+                                <img src="{{ item.main_image.0 }}"/>
+                                {% if item.status == "소유주 모집중" %}
+                                    <div class="item_status" style="background-color: #111FCD">
+                                        <p>{{ item.status }}</p>
+                                    </div>
+                                {% elif item.status == "모집 완료" %}
+                                    <div class="item_status" style="background-color: #2D3135">
+                                        <p style="opacity: 40%">{{ item.status }}</p>
+                                    </div>
+                                {% else %}
+                                    <div class="item_status" style="background-color: #4ADEDE">
+                                        <p>{{ item.status }}</p>
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="item_body">
+                                <div class="item_title">
+                                    {{ item.name }}
+                                </div>
+                                <div class="item_subtitle">
+                                    {{ item.address }} | {{ item.item_type }}
+                                </div>
+                                <div class="item_divider"></div>
+                                <div class="item_price_wrapper">
+                                    <p class="item_share">1/8 지분</p>
+                                    <p class="item_price">{{ item.share_price }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="section_service">
+        <div class="service_container section_container">
+            <div class="section_title">
+                <p>당신에게 최적화된</p>
+                <p>프리미엄 사업방식</p>
+            </div>
+            <div class="service_list">
+                <div class="service_item">
+                    <div class="service_title">
+                        <p>No.1</p>
+                        <p>1/8로 줄어든 소유 부담감</p>
+                    </div>
+                    <div class="service_divider"></div>
+                    <div class="service_text">
+                        8명의 참여자들이 1/8의 자본금을 출자하여, 줄어든 부담감으로 고급 휴양지 부동산을 소유해요.
+                    </div>
+                </div>
+                <div class="service_item">
+                    <div class="service_title">
+                        <p>No.2</p>
+                        <p>소유자가 직접 누리는 휴가생활</p>
+                    </div>
+                    <div class="service_divider"></div>
+                    <div class="service_text">
+                        8명의 소유자들은 연중 원할 때에 주말 휴가 공간으로 무료로 사용할 수 있어요.
+                    </div>
+                </div>
+                <div class="service_item">
+                    <div class="service_title">
+                        <p>No.3</p>
+                        <p>거점 오피스 공간 대여</p>
+                    </div>
+                    <div class="service_divider"></div>
+                    <div class="service_text">
+                        높은 사용료를 지불하는 기업들에게 평이롱안 작업 공간을 대여하여, 연 수익률을 극대화하는 전략을 사용해요.
+                    </div>
+                </div>
+                <div class="service_item">
+                    <div class="service_title">
+                        <p>No.4</p>
+                        <p>매각 수익 프리미엄</p>
+                    </div>
+                    <div class="service_divider"></div>
+                    <div class="service_text">
+                        직접 사용하고 임대하던 중에도 갖고 있던 지분을 매도하거나, 물건을 매각할 경우 차익 프리미엄을 얻을 수 있어요.
+                    </div>
+                </div>
+            </div>
+            <div class="service_process">
+                <div class="service_process_title">
+                    진행 절차
+                </div>
+                <div class="process_divider"></div>
+                <div class="service_process_wrapper">
+                    <div class="service_process_body">
+                        <div class="service_process_line"></div>
+                        <div class="service_process_item">
+                            <div>1</div>
+                            <p>사업 기획 및 게시</p>
+                        </div>
+                        <div class="service_process_item">
+                            <div>2</div>
+                            <p>사업 참여자 모집</p>
+                        </div>
+                        <div class="service_process_item">
+                            <div>3</div>
+                            <p>부동산 매입 | 인테리어</p>
+                        </div>
+                        <div class="service_process_item">
+                            <div>4</div>
+                            <p>부동산 위탁 운용 및 배당</p>
+                        </div>
+                        <div class="service_process_item">
+                            <div>5</div>
+                            <p>사업 지분 거래 가능</p>
+                        </div>
+                        <div class="service_process_item">
+                            <div>6</div>
+                            <p>사업 종료 후 부동산 매각</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service_advantage">
+                <div class="service_advantage_title">
+                    업무용 숙박시설의 장점
+                </div>
+                <div class="advantage_divider"></div>
+                <div class="service_advantage_wrapper">
+                    <div class="service_advantage_item">
+                        <p>장점 1</p>
+                        <p>주택수에 포함되지 않음</p>
+                    </div>
+                    <div class="service_advantage_item">
+                        <p>장점 2</p>
+                        <p>청약통장이 필요 없음</p>
+                    </div>
+                    <div class="service_advantage_item">
+                        <p>장점 3</p>
+                        <p>취득세 및 보유세 혜택</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service_type">
+                <div class="service_advantage_type">
+                    <img src="{% static 'img/officetel.png' %}"/>
+                    <div class="service_item_title" style="align-items: flex-start">
+                        <p>오피스텔</p>
+                        <div class="service_divider" style="border-top: 2px solid #F4F4F4; "></div>
+                    </div>
+                </div>
+                <div class="service_advantage_type">
+                    <img src="{% static 'img/residence.png' %}"/>
+                    <div class="service_item_title" style="align-items: flex-end">
+                        <p>생활형 숙박시설</p>
+                        <div class="service_divider" style="border-top: 2px solid #F4F4F4; "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section_question">
+        <div class="question_container section_container">
+            <div class="section_title">
+                <p>FAQ</p>
+                <p>자주 묻는 질문</p>
+            </div>
+            <div class="question_list">
+                <div class="question_item">
+                    <div class="question_item_top">
+                        <p>Q1</p>
+                    </div>
+                    <div class="question_item_body">
+                        <div class="question_item_title">
+                            위대한집사가 하는 일은 무엇인가요?
+                        </div>
+                        <div class="question_item_divider"></div>
+                        <div class="question_item_text">
+                            출자자님들의 자금을 모으고, 운용하고, 배당해요.
+                            원할한 운영과 수익 창출을 위해 임대관리와 마케팅 또한 수행합니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="question_item">
+                    <div class="question_item_top">
+                        <p>Q2</p>
+                    </div>
+                    <div class="question_item_body">
+                        <div class="question_item_title">
+                            구체적인 사업 구조가 어떻게 되나요?
+                        </div>
+                        <div class="question_item_divider"></div>
+                        <div class="question_item_text">
+                            취득에 필요한 금액의 1/8을 출자하게 되면,
+                            부동산을 소유하고 있는 유한회사의 법적 주주가 돼요.
+                            사업 운영에 관한 의결권과 수익배당청구권을 갖습니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="question_item">
+                    <div class="question_item_top"><p>Q3</p></div>
+                    <div class="question_item_body">
+                        <div class="question_item_title">
+                            자산 운용 및 배당이 어떻게 이루어지나요?
+                        </div>
+                        <div class="question_item_divider"></div>
+                        <div class="question_item_text">
+                            위대한집사는 주중 5일은 임대하고,
+                            주말 2일은 출자자들에게 실사용을 주선해요.
+                            비용과 세금이 제외된 모든 수익은 출자자들에게 균등하게 분배된답니다.
+                        </div>
+                    </div>
+                </div>
+                <button class="question_ask" type="button">
+                    <div class="question_ask_button">
+                        <img src="{% static 'img/ask.svg' %}">
+                    </div>
+                    <div class="question_ask_text">
+                        <p>아직 해결되지</p>
+                        <p>않았다면?</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_cta">
+        <div class="cta_container section_container">
+            <button id="button_ask" class="button_action">
+                📢 문의하러 가기
+            </button>
+        </div>
+    </section>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail/m_section_cta.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index/m_section_hero.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index/m_section_value.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index/m_section_items.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index/m_section_service.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index/m_section_question.css' %}">
+{% endblock %}

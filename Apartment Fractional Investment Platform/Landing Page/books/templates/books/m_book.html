@@ -1,0 +1,333 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {# block Google Tag Manager #}
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRPQH3F');</script>
+    {# endblock Google Tag Manager #}
+    {# block meta #}
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>위대한집사 : 30억 강남 아파트를 내 지갑에</title>
+        <meta name="description" content="강남 불패의 신화, 아파트 지분 거래소 위대한집사와 함께라면 이제는 당신이 주인공입니다.">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{% static 'img/favi/ms-icon-144x144.png' %}">
+        <meta name="theme-color" content="#FFFFFF">
+        <meta name="naver-site-verification" content="24546991bfe132fea743a64166231f410da7943f" />
+        <meta name="facebook-domain-verification" content="e9p88y6fyg95cqo5cf20bgoyx22uyd" />
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="greatzipsa.com">
+        <meta property="og:site_name" content="위대한집사">
+        <meta property="og:title" content="위대한집사: 30억 강남 아파트를 내 지갑에">
+        <meta property="og:description" content="강남 불패의 신화, 아파트 지분 거래소 위대한집사와 함께라면 이제는 당신이 주인공입니다.">
+        <meta property="og:image" content="{% static 'img/preview_image.png' %}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="greatzipsa.com">
+        <meta name="twitter:title" content="위대한집사: 30억 강남 아파트를 내 지갑에">
+        <meta name="twitter:description" content="강남 불패의 신화, 아파트 지분 거래소 위대한집사와 함께라면 이제는 당신이 주인공입니다.">
+        <meta name="twitter:image" content="{% static 'img/preview_image.png' %}">
+        <link rel="canonical" href="https://greatzipsa.com"/>
+    {# endblock meta #}
+    {# block External Link #}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    {# endblock External Link #}
+    {# block CSS Style Sheet #}
+        <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'css/image_rendering.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mobile/popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mobile/book.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mobile/section_hero.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mobile/section_summary.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mobile/section_value.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mobile/section_footer.css' %}">
+    {# endblock CSS Style Sheet #}
+
+    {# block favicon #}
+        <link rel="manifest" href="{% static 'img/favi/manifest.json' %}">
+        <link rel="shortcut icon" href="{% static 'img/favi/favicon.ico' %}">
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/favi/apple-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/favi/apple-icon-60x60.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/favi/apple-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/favi/apple-icon-76x76.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/favi/apple-icon-114x114.png' %}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/favi/apple-icon-120x120.png' %}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/favi/apple-icon-144x144.png' %}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/favi/apple-icon-152x152.png' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favi/apple-icon-180x180.png' %}">
+        <link rel="icon" type="image/png" sizes="192x192"  href="{% static 'img/favi/android-icon-192x192.png' %}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favi/favicon-32x32.png' %}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favi/favicon-96x96.png' %}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favi/favicon-16x16.png' %}">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{% static 'img/favi/ms-icon-144x144.png' %}">
+        <meta name="theme-color" content="#ffffff">
+    {# endblock favicon #}
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1353739795144335');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1353739795144335&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    {# block Google Tag Manager (noscript) #}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRPQH3F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {# endblock Google Tag Manager (noscript) #}
+
+    <div class="float_book">
+        <form method="post" class="book_form">
+            {% csrf_token %}
+            <input class="form_input" type="tel" inputmode="tel" placeholder="전화번호 등록하고 오픈 알림 받기">
+            <button class="button_submit" type="submit">
+                <img class="mobile" src="{% static 'img/mobile/button_submit.png'%}" alt="번호 등록하기"
+                 srcset="{% static 'img/mobile/button_submit.png' %} 1x,
+                 {% static 'img/mobile/button_submit-1.5x.png' %} 1.5x,
+                 {% static 'img/mobile/button_submit-2x.png' %} 2x,
+                 {% static 'img/mobile/button_submit-3x.png' %} 3x,
+                 {% static 'img/mobile/button_submit-4x.png' %} 4x">
+                <img class="tablet" src="{% static 'img/tablet/button_submit.png'%}" alt="번호 등록하기"
+                 srcset="{% static 'img/tablet/button_submit.png' %} 1x,
+                 {% static 'img/tablet/button_submit-1.5x.png' %} 1.5x,
+                 {% static 'img/tablet/button_submit-2x.png' %} 2x,
+                 {% static 'img/tablet/button_submit-3x.png' %} 3x,
+                 {% static 'img/tablet/button_submit-4x.png' %} 4x">
+            </button>
+        </form>
+    </div>
+
+    <div id="hero">
+        <div class="hero_container">
+            <div class="hero_text">
+                <p class="headline">30억 강남 아파트를 내 지갑에</p>
+                <p class="title"><strong>위대한집사</strong></p>
+            </div>
+            <div class="hero_image">
+                <img class="mobile" src="{% static 'img/mobile/hero_image.png' %}" alt="대표이미지"
+                 srcset="{% static 'img/mobile/hero_image.png' %} 1x,
+                 {% static 'img/mobile/hero_image-1.5x.png' %} 1.5x,
+                 {% static 'img/mobile/hero_image-2x.png' %} 2x,
+                 {% static 'img/mobile/hero_image-3x.png' %} 3x,
+                 {% static 'img/mobile/hero_image-4x.png' %} 4x">
+                <img class="tablet" src="{% static 'img/tablet/hero_image.png' %}" alt="대표이미지"
+                 srcset="{% static 'img/tablet/hero_image.png' %} 1x,
+                 {% static 'img/tablet/hero_image-1.5x.png' %} 1.5x,
+                 {% static 'img/tablet/hero_image-2x.png' %} 2x,
+                 {% static 'img/tablet/hero_image-3x.png' %} 3x,
+                 {% static 'img/tablet/hero_image-4x.png' %} 4x">
+            </div>
+        </div>
+    </div>
+
+    <div id="summary">
+        <div class="summary_container">
+            <div class="mobile">
+                <p>
+                    강남 불패의 신화,<br>
+                    <span><mark>아파트 지분 거래소</mark></span><br>
+                    위대한집사와 함께라면<br>
+                    이제는 당신이 <span>주인공</span>입니다.
+                </p>
+            </div>
+            <div class="tablet">
+                <p>
+                    강남 불패의 신화,<br>
+                    <span><mark>아파트 지분 거래소</mark></span> 위대한집사와 함께라면<br>
+                    이제는 당신이 <span>주인공</span>입니다.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="val_1" class="value">
+        <div class="value_container">
+           <div class="value_content">
+                <div class="value_text">
+                    <p class="title">누구나</p>
+                    <p class="headline">1000원에 강남 아파트<br>집주인이 되어보세요</p>
+                    <p class="description">
+                        지분 거래소에 상장되는 아파트에<br>
+                        원하는 만큼 출자하고 확보하는 지분!
+                    </p>
+                </div>
+                <div class="value_image">
+                    <img class="mobile" src="{% static 'img/mobile/value_1.png' %}" alt="1000원만 있으면 강남 아파트 집주인"
+                     srcset="{% static 'img/mobile/value_1.png' %} 1x,
+                     {% static 'img/mobile/value_1-1.5x.png' %} 1.5x,
+                     {% static 'img/mobile/value_1-2x.png' %} 2x,
+                     {% static 'img/mobile/value_1-3x.png' %} 3x,
+                     {% static 'img/mobile/value_1-4x.png' %} 4x">
+                    <img class="tablet" src="{% static 'img/tablet/value_1.png' %}" alt="1000원만 있으면 강남 아파트 집주인"
+                     srcset="{% static 'img/tablet/value_1.png' %} 1x,
+                     {% static 'img/tablet/value_1-1.5x.png' %} 1.5x,
+                     {% static 'img/tablet/value_1-2x.png' %} 2x,
+                     {% static 'img/tablet/value_1-3x.png' %} 3x,
+                     {% static 'img/tablet/value_1-4x.png' %} 4x">
+                </div>
+           </div>
+        </div>
+    </div>
+    <div id="val_2" class="value">
+        <div class="value_container">
+           <div class="value_content">
+                <div class="value_text">
+                    <p class="title">언제든지</p>
+                    <p class="headline">주식처럼 원할 때<br>바로 바로 사고파세요
+                    </p>
+                    <p class="description">
+                        365일 24시간 연중무휴로 운영되어<br>
+                        언제나 유저 간 거래가 가능한 지분 거래소!
+                    </p>
+                </div>
+                <div class="value_image">
+                    <img class="mobile" src="{% static 'img/mobile/value_2.png' %}" alt="무시무시한 부동산 세금 이제는 모두 잊으세요"
+                     srcset="{% static 'img/mobile/value_2.png' %} 1x,
+                     {% static 'img/mobile/value_2-1.5x.png' %} 1.5x,
+                     {% static 'img/mobile/value_2-2x.png' %} 2x,
+                     {% static 'img/mobile/value_2-3x.png' %} 3x,
+                     {% static 'img/mobile/value_2-4x.png' %} 4x">
+                    <img class="tablet" src="{% static 'img/tablet/value_2.png' %}" alt="무시무시한 부동산 세금 이제는 모두 잊으세요"
+                     srcset="{% static 'img/tablet/value_2.png' %} 1x,
+                     {% static 'img/tablet/value_2-1.5x.png' %} 1.5x,
+                     {% static 'img/tablet/value_2-2x.png' %} 2x,
+                     {% static 'img/tablet/value_2-3x.png' %} 3x,
+                     {% static 'img/tablet/value_2-4x.png' %} 4x">
+                </div>
+           </div>
+        </div>
+    </div>
+    <div id="val_3" class="value">
+        <div class="value_container">
+           <div class="value_content">
+                <div class="value_text">
+                    <p class="title">부담 없이</p>
+                    <p class="headline">무시무시한 부동산 세금<br>이제는 모두 잊으세요</p>
+                    <p class="description">
+                        취득세•재산세•종합부동산세 부담을 없애고,<br>
+                        금융소득 비과세 혜택까지 받는 현명한 선택!
+                    </p>
+                </div>
+                <div class="value_image">
+                    <img class="mobile" src="{% static 'img/mobile/value_3.png' %}" alt="더이상 기다리지 않고 바로 사고 파는 아파트"
+                     srcset="{% static 'img/mobile/value_3.png' %} 1x,
+                     {% static 'img/mobile/value_3-1.5x.png' %} 1.5x,
+                     {% static 'img/mobile/value_3-2x.png' %} 2x,
+                     {% static 'img/mobile/value_3-3x.png' %} 3x,
+                     {% static 'img/mobile/value_3-4x.png' %} 4x">
+                    <img class="tablet" src="{% static 'img/tablet/value_3.png' %}" alt="더이상 기다리지 않고 바로 사고 파는 아파트"
+                     srcset="{% static 'img/tablet/value_3.png' %} 1x,
+                     {% static 'img/tablet/value_3-1.5x.png' %} 1.5x,
+                     {% static 'img/tablet/value_3-2x.png' %} 2x,
+                     {% static 'img/tablet/value_3-3x.png' %} 3x,
+                     {% static 'img/tablet/value_3-4x.png' %} 4x">
+                </div>
+           </div>
+        </div>
+    </div>
+    <div id="val_4" class="value">
+        <div class="value_container">
+           <div class="value_content">
+                <div class="value_text">
+                    <p class="title">편리하게</p>
+                    <p class="headline">번거로운 아파트 관리<br>직접 결정만 내려주세요</p>
+                    <p class="description">
+                        핸드폰으로 투표에만 참여하면,<br>
+                        전문가가 내 뜻대로 관리해주니까!
+                    </p>
+                </div>
+                <div class="value_image">
+                    <img class="mobile" src="{% static 'img/mobile/value_4.png' %}" alt="번거로운 아파트 관리 직접 결정만 내려주세요"
+                     srcset="{% static 'img/mobile/value_4.png' %} 1x,
+                     {% static 'img/mobile/value_4-1.5x.png' %} 1.5x,
+                     {% static 'img/mobile/value_4-2x.png' %} 2x,
+                     {% static 'img/mobile/value_4-3x.png' %} 3x,
+                     {% static 'img/mobile/value_4-4x.png' %} 4x">
+                    <img class="tablet" src="{% static 'img/tablet/value_4.png' %}" alt="번거로운 아파트 관리 직접 결정만 내려주세요"
+                     srcset="{% static 'img/tablet/value_4.png' %} 1x,
+                     {% static 'img/tablet/value_4-1.5x.png' %} 1.5x,
+                     {% static 'img/tablet/value_4-2x.png' %} 2x,
+                     {% static 'img/tablet/value_4-3x.png' %} 3x,
+                     {% static 'img/tablet/value_4-4x.png' %} 4x">
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_container">
+            <div class="footer_content">
+                <div class="footer_text">
+                    <p class="headline">30억 강남 아파트를 내 지갑에</p>
+                    <p class="title"><strong>위대한집사</strong></p>
+                </div>
+
+                <div class="footer_button">
+                    <button type="button" onclick="button_ask()" class="button_ask">
+                        <img class="mobile" src="{% static 'img/mobile/button_ask.png' %}" alt="카톡으로 문의하기"
+                         srcset="{% static 'img/mobile/button_ask.png' %} 1x,
+                         {% static 'img/mobile/button_ask-1.5x.png' %} 1.5x,
+                         {% static 'img/mobile/button_ask-2x.png' %} 2x,
+                         {% static 'img/mobile/button_ask-3x.png' %} 3x,
+                         {% static 'img/mobile/button_ask-4x.png' %} 4x">
+                        <img class="tablet" src="{% static 'img/tablet/button_ask.png' %}" alt="카톡으로 문의하기"
+                         srcset="{% static 'img/tablet/button_ask.png' %} 1x,
+                         {% static 'img/tablet/button_ask-1.5x.png' %} 1.5x,
+                         {% static 'img/tablet/button_ask-2x.png' %} 2x,
+                         {% static 'img/tablet/button_ask-3x.png' %} 3x,
+                         {% static 'img/tablet/button_ask-4x.png' %} 4x">
+                        <span>카톡으로 문의하기</span>
+                    </button>
+                    <button type="button" onclick="button_share()" class="button_share">
+                        <img class="mobile" src="{% static 'img/mobile/button_share.png' %}" alt="공유하기"
+                         srcset="{% static 'img/mobile/button_share.png' %} 1x,
+                         {% static 'img/mobile/button_share-1.5x.png' %} 1.5x,
+                         {% static 'img/mobile/button_share-2x.png' %} 2x,
+                         {% static 'img/mobile/button_share-3x.png' %} 3x,
+                         {% static 'img/mobile/button_share-4x.png' %} 4x">
+                        <img class="tablet" src="{% static 'img/tablet/button_share.png' %}" alt="공유하기"
+                         srcset="{% static 'img/tablet/button_share.png' %} 1x,
+                         {% static 'img/tablet/button_share-1.5x.png' %} 1.5x,
+                         {% static 'img/tablet/button_share-2x.png' %} 2x,
+                         {% static 'img/tablet/button_share-3x.png' %} 3x,
+                         {% static 'img/tablet/button_share-4x.png' %} 4x">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {#block javascript#}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="https://kit.fontawesome.com/466d58e6a3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="{% static "js/button_ask.js" %}"></script>
+    <script src="{% static "js/button_share.js" %}"></script>
+    <script src="{% static "js/csrf.js" %}"></script>
+    <script src="{% static "js/screen.js" %}"></script>
+    <script src="{% static "js/button_submit.js" %}"></script>
+    {#endblock javascript#}
+</body>
+</html>

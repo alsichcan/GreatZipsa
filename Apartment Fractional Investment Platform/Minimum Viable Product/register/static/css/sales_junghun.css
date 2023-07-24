@@ -1,0 +1,675 @@
+html{
+    font-family: 'SCoreDream';
+}
+
+body{
+    margin:0;
+}
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+}
+body{
+
+    width:100%;
+    overflow-x: hidden;
+}
+
+.registration{
+  height:850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registration-image{
+   position:relative;
+   width:100%;
+
+
+}
+.registration-content{
+    background:white;
+
+}
+.registration-image img{
+    width:100%;
+    height: auto;
+}
+
+.registration-title{
+    padding-top:16px;
+    padding-left:16px;
+    padding-right:16px;
+}
+.registration-title1{
+    font-style: normal;
+
+font-weight: 300;
+font-size: 0.5rem;
+line-height: 0.625rem;
+/* identical to box height */
+
+letter-spacing: -0.02em;
+
+}
+.registration-title2{
+    display:flex;
+   gap:8px;
+    align-items:flex-end;
+
+}
+.registration-title2 div:first-child{
+    padding-top:8px;
+    font-family: 'S-Core Dream';
+font-style: normal;
+font-weight: 600;
+font-size: 2rem;
+line-height: 38px;
+
+/* Black/100 */
+
+color: #000000;
+
+}
+.registration-title2 div:nth-child(3){
+    display:flex;
+    align-items: flex-end;
+}
+.registration-title2 div:nth-child(2),.registration-title2 div:nth-child(4){
+    font-style: normal;
+font-weight: 500;
+font-size: calc(15rem/16);
+line-height: 150%;
+/* or 22px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.005em;
+
+}
+.registration-title2 div:nth-child(2),.registration-title2 div:nth-child(3),.registration-title2 div:nth-child(4){
+    position:relative;
+    bottom:2px;
+}
+.registration-line1{
+
+    margin-left:16px;
+    margin-right:16px;
+    margin-top:15px;
+    height:2px;
+    background-color: #D29B4A;
+}
+.registration-goal{
+    padding:16px;
+    display:flex;
+
+    justify-content: space-between;
+}
+.registration-goal > div:nth-child(odd){
+    font-style: normal;
+font-weight: 200;
+font-size: 0.75rem;
+line-height: 170%;
+/* or 20px */
+display:flex;
+flex-direction:column;
+align-items: center;
+    justify-content: center;
+letter-spacing: -0.04em;
+}
+.registration-seperate{
+        width: 0px;
+height: 16px;
+
+border: 1px solid #000000;
+}
+.registration-goal2,.registration-goal4{
+    display:flex;
+    gap:9px;
+}
+.registration-goal > div:nth-child(even){
+font-style: normal;
+font-weight: 600;
+font-size: 1.25rem;
+line-height: 1.5rem;
+display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration-line2{
+    margin-left:16px;
+    margin-right:16px;
+    height:2px;
+    background-color: #D29B4A;
+}
+.registration-calc-title{
+    padding-top:8px;
+    padding-left:16px;
+    font-style: normal;
+font-weight: 200;
+font-size: 0.75rem;
+line-height: 170%;
+/* or 20px */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+}
+.registration-calc-result{
+    display:flex;
+    padding-left:16px;
+    justify-content: space-between;
+    padding-right:16px;
+}
+.registration-calc-in{
+    font-weight: 300;
+font-size: 0.5rem;
+line-height: 10px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+}
+.registration-calc-out span{
+    color: #D29B4A;
+}
+.registration-calc-out{
+    font-style: normal;
+font-weight: 500;
+font-size: calc(13rem/16);
+line-height: 150%;
+/* or 20px */
+
+display: flex;
+align-items: center;
+text-align: right;
+letter-spacing: -0.02em;
+
+/* CI/Main_gold */
+
+
+}
+.registration-calc-input{
+    margin-top:15px;
+    padding-left:16px;
+    padding-right:16px;
+}
+.registration-calc-input input{
+    width:100%;
+}
+#registration-calc-input-text{
+      background: rgba(0, 0, 0, 0.1);
+/* CI/Sub_gray */
+
+border: 1px solid #707070;
+border-radius: 4px;
+
+}
+.registration-calc-amount{
+    margin-top:6px;
+    padding-left:16px;
+    padding-right:16px;
+    display:flex;
+    justify-content:space-between;
+}
+.registration-calc-amount div{
+    font-style: normal;
+font-weight: 300;
+font-size: 0.5rem;
+line-height: 0.625rem;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+}
+.registration-line3{
+        margin-left:16px;
+    margin-right:16px;
+    margin-top:6px;
+    height:2px;
+    background-color: #D29B4A;
+}
+.registration-num{
+    display:flex;
+    padding-left:16px;
+    padding-right:16px;
+    justify-content: space-between;
+}
+.registration-num-title{
+    display:flex;
+    justify-content: center;
+    width:39%;
+}
+.registration-num-title-text{
+    font-style: normal;
+font-weight: 300;
+font-size: 0.5rem;
+line-height: 10px;
+display: flex;
+    justify-content: center;
+align-items: center;
+letter-spacing: -0.02em;
+}
+.registration-num-seperate{
+width: 0px;
+height: 10px;
+ margin-top:6px;
+
+
+
+
+border: 1px solid #000000;
+}
+.registration-num-number{
+    font-style: normal;
+font-weight: 200;
+font-size: 0.75rem;
+line-height: 170%;
+/* or 20px */
+
+display: flex;
+    justify-content: center;
+align-items: center;
+text-align: center;
+letter-spacing: -0.04em;
+    width:61%;
+}
+.price{
+    width:100%;
+    position:relative;
+    height:96.93vh;background:blue;
+}
+.registration-cta{
+    background: #313A48;
+    font-style: normal;
+font-weight: 500;
+font-size: calc(13rem/16);
+line-height: 150%;
+/* or 20px */
+
+display:flex;
+
+    justify-content: center;
+    align-items:center;
+letter-spacing: -0.02em;
+
+/* White/100 */
+
+color: #FFFFFF;
+
+    height:40px;
+
+}
+@media(min-width:640px){
+
+ .registration-content{
+     width:62.5%;
+
+     padding-right:10px;
+ }
+    .registration{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+height:auto;!important;
+    }
+    .registration-image {
+    width:62.5%;
+    }
+
+    .registration-part1{
+        display:flex;
+        justify-content: space-around;
+    }
+    .registration-title,.registration-calc,.registration-goal,.registration-btn{
+        width:50%;
+    }
+    .registration-btn{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .registration-part2{
+        display:flex;
+        justify-content: space-around;
+    }
+
+section{
+    background:white;
+}
+
+}
+.point1{
+  position:relative;
+    height:96.93vh;background:green;
+}
+.point2{
+  position:relative;
+    height:96.93vh;background:black;
+}
+.point3{
+position:relative;
+    height:96.93vh;background:yellow;
+}
+.apt-info-text{
+    padding-left:16px;
+    padding-right:16px;
+}
+.apt-info-title1 {
+    margin-top:64px;
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+margin-left:12px;
+}
+.apt-info-title2{
+    margin-top:8px;
+    font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 38px;
+    margin-left:12px;
+}
+.apt-info-line1{
+
+    margin-top:21px;
+    background: #D29B4A;
+    width:100%;
+
+    height:2px;
+
+
+}
+.apt-info-detail{
+    margin-top:22px;
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    margin-left:12px;
+    margin-right:12px;
+}
+.apt-info-item{
+    display:flex;
+    justify-content: space-between;
+}
+.apt-info-item-title{
+    font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 150%;
+/* identical to box height, or 20px */
+
+letter-spacing: -0.02em;
+}
+.apt-info-item-content{
+    font-style: normal;
+font-weight: 200;
+font-size: 12px;
+line-height: 170%;
+/* or 20px */
+
+display: flex;
+align-items: center;
+text-align: right;
+letter-spacing: -0.04em;
+
+}
+.apt-info-line2{
+    margin-top:24px;
+    width:100%;
+    height:2px;
+    background: #D29B4A;
+}
+.apt-info-map-title{
+    margin-top:18px;
+    margin-left:36px;
+    font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 150%;
+/* or 20px */
+
+letter-spacing: -0.02em;
+}
+.apt-info-map-line{
+    width: 73px;
+height: 1px;
+margin-left:12px;
+/* CI/Main_gold */
+
+background: #D29B4A;
+}
+.apt-info-map-display{
+    margin-top:34px;
+    width:100%;
+    height:304px;
+
+
+}
+.apt-info-map-title{
+        margin-left:24px;
+    }
+.registration-cta{
+    outline: 1px solid white;
+    outline-offset:-2px;
+}
+@media (min-width:640px) {
+   .apt_info_section{
+       display:flex;
+        justify-content: center;
+       padding-top:90px;
+       padding-bottom:90px;
+
+   }
+    .apt-info-map-title{
+        margin-left:24px;
+    }
+
+    .apt-info{
+        width:100%;
+        display:flex;
+        justify-content: space-evenly;
+         align-items:center;
+    }
+    .apt-info-text{
+        width:350px;
+      /* width:534px;*/
+box-sizing: border-box;
+
+    }
+
+    .apt-info-map{
+
+       width:302px;
+height:346px;
+box-sizing:border-box;
+        padding-left:15px;
+        padding-right:15px;
+        margin-top:20px;
+    }
+    .apt-info-map-display{
+        position:relative;
+        width:100%;
+        margin-top:20px;
+        top:15px;
+    }
+    .apt-info-title1{
+        padding-top:0px !important;
+        margin-top:0 !important;
+    }
+    .apt-info-map-title{
+        margin-top:0;
+    }
+
+}
+/*================footer================================*/
+.hero_button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 424px;
+    width: 100%;
+    height: 56px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.hero_button > .button{
+    background: #313A48;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 176px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_deco{
+    position: absolute;
+    border: 1px solid #FFFFFF;
+    padding-top: 3px;
+    height: 50px;
+    width: 170px;
+    border-radius: 8px;
+}
+
+.hero_button > .button > div{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 7.79vh;
+    display: flex;
+    justify-content: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+@media (min-width: 640px) {
+    .hero_button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 667px;
+    width: 100%;
+    height: 66px;
+    cursor: pointer;
+    overflow: hidden;
+    }
+
+    .hero_button > .button{
+        background: #313A48;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        width: 228px;
+        height: 66px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button_deco{
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        padding-top: 3px;
+        height: 60px;
+        width: 223px;
+        border-radius: 8px;
+    }
+}
+
+
+.association_ctn_title > div:nth-child(1){
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.association_ctn_title > div:nth-child(2){
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+
+.association_ctn_title > div:nth-child(3){
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #707070;
+}
+
+.footer{
+    position: relative;
+    height: 600px;
+    background: linear-gradient(158.89deg, rgba(49, 58, 72, 0) 37.99%, #313A48 90.73%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_button{
+    margin-top: 4rem;
+}
+
+.footer_slogan{
+    padding-top: 4rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #707070;
+}
+
+.footer_logo, .scroll_up{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll_up{
+    cursor: pointer;
+    padding-top: 4rem;
+}
+
+@media (min-width: 640px) {
+    .footer {
+        height: 500px;
+    }
+
+    .slogan_logo_flex {
+        display: flex;
+        width: 90vw;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+
+    .footer_slogan, .footer_logo {
+        padding-top: 0rem;
+    }
+
+
+    .footer_slogan {
+        text-align: left;
+    }
+
+}
+.menu img,   .registration-cta {
+    cursor: pointer;
+}

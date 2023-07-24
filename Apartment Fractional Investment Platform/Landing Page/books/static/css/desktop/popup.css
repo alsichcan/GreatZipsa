@@ -1,0 +1,84 @@
+.swal2-popup {
+    width: 588px !important;
+    margin: 0px !important;
+    padding: 24px !important;
+
+    background: white !important;
+    border-radius: 10px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-content: center !important;
+}
+
+.swal2-header {
+    width: 540px !important;
+    margin: 16px 0px 12px 0px !important;
+    padding: 0px !important;
+}
+
+.swal2-icon {
+    margin: 0px 0px 20px 0px !important;
+    padding: 0px !important;
+}
+
+.swal2-title {
+    width: 100% !important;
+    margin: 20px 0px 0px 0px !important;
+    padding: 0px !important;
+
+    font-family: "Noto Sans KR", serif !important;
+    font-weight: bold !important;
+    font-size: 40px !important;
+    line-height: 58px !important;
+    color: #0F1824 !important;
+    text-align: center !important;
+}
+
+.swal2-content {
+    width: 540px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.swal2-html-container {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+
+    font-family: "Noto Sans KR", serif !important;
+    font-size: 24px !important;
+    line-height: 35px !important;
+    letter-spacing: -0.03em !important;
+    color: #98A3B1 !important;
+    text-align: center !important;
+}
+
+.swal2-actions {
+    width: 540px !important;
+    margin: 16px 0px 0px 0px !important;
+    padding: 0px !important;
+}
+
+.swal2-confirm {
+    width: 100% !important;
+    height: 80px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+
+    background: #0E56F4 !important;
+    border-radius: 10px !important;
+
+    font-family: "Noto Sans KR", serif !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    line-height: 35px !important;
+    text-align: center !important;
+    letter-spacing: 0.05em !important;
+    color: white !important;
+}

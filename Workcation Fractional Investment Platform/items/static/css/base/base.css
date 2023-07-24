@@ -1,0 +1,42 @@
+@font-face{
+    font-family: 'Apple SD Gothic Neo';
+    src: url("../../fonts/AppleSDGothicNeoM.ttf") format("truetype")
+}
+
+@font-face{
+    font-family: 'NanumSquareOTF';
+    src: url("../../fonts/NanumSquareR.ttf") format("truetype")
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Apple SD Gothic Neo', 'NanumSquareOTF';
+}
+
+header, section, footer{
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_container{
+    width: 1320px;
+}
+
+
+.section_title{
+    width: 100%;
+    height: 72px;
+
+    text-align: left;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+}

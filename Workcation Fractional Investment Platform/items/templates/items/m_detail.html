@@ -1,0 +1,382 @@
+{% extends 'items/m_base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="section_intro">
+        <div class="intro_container section_container">
+            <div class="intro_title">
+                {{ item.name }}
+            </div>
+            <div class="intro_image">
+                <img src="{{ item.main_image.0 }}"/>
+            </div>
+
+            <div class="intro_wrapper">
+                <div class="intro_info_title">
+                    사업 개요
+                </div>
+                <div class="intro_divider"></div>
+
+                <div class="intro_info">
+                    <div class="intro_info_container">
+
+                        <div class="intro_info_share">
+                            <div class="intro_info_subtitle">
+                                <p>출자 금액</p>
+                                <p> | 1/8 지분</p>
+                            </div>
+                            <div class="intro_info_price">
+                                {{ item.share_price }}
+                            </div>
+                        </div>
+                        <div class="intro_info_status">
+                            <div class="intro_info_subtitle">
+                                <p>진행 상황</p>
+                            </div>
+                            <div class="intro_info_status_container">
+
+                                {% if item.status == "소유주 모집중" %}
+                                    <div class="intro_info_status_item"
+                                         style="background-color: #111FCD; color: white;">모집중
+                                    </div>
+                                    <div class="intro_info_status_item">모집 완료</div>
+                                    <div class="intro_info_status_item">지분 매수</div>
+                                {% elif item.status == "모집 완료" %}
+                                    <div class="intro_info_status_item">모집중</div>
+                                    <div class="intro_info_status_item"
+                                         style="background-color: #111FCD; color: white;">모집 완료
+                                    </div>
+                                    <div class="intro_info_status_item">지분 매수</div>
+                                {% else %}
+                                    <div class="intro_info_status_item">모집중</div>
+                                    <div class="intro_info_status_item">모집 완료</div>
+                                    <div class="intro_info_status_item"
+                                         style="background-color: #111FCD; color: white;">지분 매수
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="intro_info_members">
+                            <div class="intro_info_subtitle">
+                                <p>참여자 현황</p>
+                                <p> | 총 인원수 {{ item.share_members }} / 8</p>
+                            </div>
+                            <div class="intro_info_members_container">
+                                <div class="member"><img src="{% static 'img/icon_member_empty.svg' %}"></div>
+                                <div class="member"><img src="{% static 'img/icon_member_empty.svg' %}"></div>
+                                <div class="member"><img src="{% static 'img/icon_member_empty.svg' %}"></div>
+                                <div class="member"><img src="{% static 'img/icon_member_empty.svg' %}"></div>
+                                <div class="member"><img src="{% static 'img/icon_member_empty.svg' %}"></div>
+                                <div class="member"><img src="{% static 'img/icon_member_empty.svg' %}"></div>
+                                <div class="member"><img src="{% static 'img/icon_member_empty.svg' %}"></div>
+                                <div class="member"><img src="{% static 'img/icon_member_empty.svg' %}"></div>
+                                <script type="text/javascript">
+                                    var members = document.getElementsByClassName('member');
+                                    var num = Number({{ item.share_members }});
+                                    for (let i = 0; i < num; i++) {
+                                        members[i].firstElementChild.src = "{% static 'img/icon_member_filled.svg' %}";
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_value">
+        <div class="value_container section_container">
+            <div class="section_title">
+                <p>휴양을 위한</p>
+                <p>최적의 여가조건</p>
+            </div>
+            <div class="value_list">
+                <div class="value_item">
+                    <div class="value_item_image">
+                        <img src="{{ item.vacation_images.0 }}">
+                    </div>
+                    <div class="value_item_body">
+                        <div class="value_item_title">
+                            {{ item.vacation_first_title }}
+                        </div>
+                        <div class="value_item_divider"></div>
+                        <div class="value_item_text">
+                            {{ item.vacation_first_text }}
+                        </div>
+                    </div>
+                </div>
+                <div class="value_item">
+                    <div class="value_item_image">
+                        <img src="{{ item.vacation_images.1 }}">
+                    </div>
+                    <div class="value_item_body">
+                        <div class="value_item_title">
+                            {{ item.vacation_second_title }}
+                        </div>
+                        <div class="value_item_divider"></div>
+                        <div class="value_item_text">
+                            {{ item.vacation_second_text }}
+                        </div>
+                    </div>
+                </div>
+                <div class="value_item">
+                    <div class="value_item_image">
+                        <img src="{{ item.vacation_images.2 }}">
+                    </div>
+                    <div class="value_item_body">
+                        <div class="value_item_title">
+                            {{ item.vacation_third_title }}
+                        </div>
+                        <div class="value_item_divider"></div>
+                        <div class="value_item_text">
+                            {{ item.vacation_third_text }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_work">
+        <div class="work_container section_container">
+            <div class="section_title">
+                <p>임대수익을 위한</p>
+                <p>최적의 공간구성</p>
+            </div>
+            <div class="work_plan">
+                평범했던 오피스텔을 "휴양지 거점 오피스"로 탈바꿈하여, 기업에게 임대하여 공실률을 최소화하고 높은 임대 수익을 창출해요.
+            </div>
+
+
+            <!-- Container for the image gallery -->
+            <div class="work_gallery">
+                {% for image_src in item.work_images %}
+                    <div class="work_gallery_image">
+                        <img src="{{ image_src }}"/>
+                    </div>
+                {% endfor %}
+
+                <!-- Next and previous buttons -->
+                <a class="work_prev" onclick="plusWorkSlides(-1)">&#10094;</a>
+                <a class="work_next" onclick="plusWorkSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+    <section id="section_investment">
+        <div class="investment_container section_container">
+            <div class="section_title">
+                <p>미래가치를 위한</p>
+                <p>최적의 입지조건</p>
+            </div>
+            <div class="investment_image">
+                <img src="{{ item.investment_image.0 }}"/>
+            </div>
+            <div class="investment_point_wrapper">
+                <div class="investment_point">
+                    <div class="investment_title">교통의 요지</div>
+                    <div class="investment_divider"></div>
+                    <div class="investment_text">{{ item.investment_point_first }}</div>
+                </div>
+                <div class="investment_point">
+                    <div class="investment_title">관광의 요지</div>
+                    <div class="investment_divider"></div>
+                    <div class="investment_text">{{ item.investment_point_second }}</div>
+                </div>
+                <div class="investment_point">
+                    <div class="investment_title">높은 개발<br>가능성</div>
+                    <div class="investment_divider"></div>
+                    <div class="investment_text">{{ item.investment_point_third }}</div>
+                </div>
+                <div class="investment_point">
+                    <div class="investment_title">넘쳐나는<br> 유동인구</div>
+                    <div class="investment_divider"></div>
+                    <div class="investment_text">{{ item.investment_point_fourth }}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_info">
+        <div class="info_container section_container">
+            <div class="section_title">
+                <p>오피스로 전환될</p>
+                <p>공간 상세정보</p>
+            </div>
+            <div class="info_body_container">
+                <div class="info_title">
+                    건물 기본정보
+                </div>
+
+                <a class="info_url" href="{{ item.url }}">
+                    <p>소개사이트<br>보러가기</p>
+                    <div>
+                        <img src="{% static 'img/ask.svg' %}"/>
+                    </div>
+                </a>
+                <div class="info_divider"></div>
+                <div class="info_body">
+                    <table class="info_table">
+                        <tr>
+                            <td>
+                                <div class="info_table_label">이름</div>
+                            </td>
+                            <td>{{ item.name }}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">주소</div>
+                            </td>
+                            <td>{{ item.address }}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">구분</div>
+                            </td>
+                            <td>{{ item.item_type }}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">호실수</div>
+                            </td>
+                            <td>총 {{ item.num_room }}호실</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">전용면적</div>
+                            </td>
+                            <td>{{ item.size_room }}평</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">층수</div>
+                            </td>
+                            <td>총 {{ item.floor }}개층</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">방향</div>
+                            </td>
+                            <td>{{ item.direction }}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">주차대수</div>
+                            </td>
+                            <td>총 {{ item.parking }}대</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">연면적</div>
+                            </td>
+                            <td>{{ item.size_floor }}m<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">건축면적</div>
+                            </td>
+                            <td>{{ item.size_building }}m<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="info_table_label">연식</div>
+                            </td>
+                            <td>{{ item.age }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="info_map_container">
+                <div class="info_title">
+                    <p>건물 위치</p>
+                </div>
+                <div class="info_divider"></div>
+                <div class="info_map">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer{{ item.map_timestamp }}"
+                         class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp": "{{ item.map_timestamp }}",
+                            "key": "{{ item.map_key }}",
+                            "mapWidth": "232",
+                            "mapHeight": "232"
+                        }).render();
+                    </script>
+                </div>
+            </div>
+            <!-- Container for the image gallery -->
+            <div class="gallery_container section_container">
+                {% for image_src in item.info_images %}
+                    <div class="gallery_image">
+                        <img src="{{ image_src }}" style="width:100%"/>
+                    </div>
+                {% endfor %}
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_cta">
+        <div class="cta_container section_container">
+            <button id="button_cta" class="button_action">
+                📝 사업계획서 받기
+            </button>
+        </div>
+    </section>
+
+    <div id="modal_cta" class="modal_wrapper">
+        <div id="cta_modal" class="modal">
+            <div class="modal_container">
+                <div class="modal_header">
+                    <p>사업 계획서 받기</p>
+                    <p>자세한 정보를 위해 사업계획서를 받아보세요!<br>최대한 빠른 시일 내에 송부드리도록 하겠습니다.</p>
+                </div>
+                <div class="modal_divider"></div>
+                <form class="modal_body" method="post">
+                    {% csrf_token %}
+                    <div class="modal_item">
+                        <div class="modal_title">이름*</div>
+                        <input id="modal_name" class="modal_form" type="text" placeholder="홍길동"></input>
+                    </div>
+                    <div class="modal_item">
+                        <div class="modal_title">전화번호*</div>
+                        <input id="modal_number" class="modal_form" type="tel"
+                               placeholder="01012345678 ('-' 없이 입력)"></input>
+                    </div>
+                    <div class="modal_item">
+                        <div class="modal_title">이메일*</div>
+                        <input id="modal_email" class="modal_form" type="email" placeholder="abcde@example.com"></input>
+                    </div>
+                </form>
+                <div class="modal_footer">
+                    <button id="button_cancel" type="button">뒤로 가기</button>
+                    <button id="button_submit" type="button">사업계획서 받기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail/m_section_cta.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail/m_section_intro.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index/m_section_value.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail/m_section_vacation.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail/m_section_work.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail/m_section_investment.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail/m_section_info.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail/m_section_gallery.css' %}">
+
+{% endblock %}
