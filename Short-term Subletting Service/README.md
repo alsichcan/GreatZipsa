@@ -7,7 +7,10 @@ Python Crawling Script for Short-term Subletting Service
 🔸[박지상(@alsichcan)](https://github.com/alsichcan): CEO, Full-Stack Developer, Business Development  
 🔸김동원: Architecture Major, UI/UX Design  
 🔸김성진: Architectural Engineering Major, Real Estate Agent, Product Development  
-⏰ Duration: 3 Months (Aug 2022 - Oct 2022) 
+⏰ Duration: 3 Months (Jul 2022 - Oct 2022) 
+
+![Short-term Rental Posts Counts and Ratio](https://github.com/alsichcan/GreatZipsa/assets/37293866/6b296c9e-88e8-4f9b-afcb-64275b54a579)
+![Monthly Short-term Rental Posts Counts and Ratio](https://github.com/alsichcan/GreatZipsa/assets/37293866/dda5c2d1-15b3-4a66-a962-fc050af2dd04)
 
 ## Description
 ### 🌐 Short-term Subletting Service  
