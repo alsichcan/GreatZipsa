@@ -20,13 +20,13 @@ Django-based Minimum Viable Products for PropTech Startup to address inefficient
 🔸Created a webpage showcasing value proposition and featured property for initial investment; planned to validate demand through pre-investment inquiries and applications  
 🔸Secured KRW 52 million in funding from the Ministry of SMEs and Startups by presenting market potential, societal value, and feasibility in legal, financial, and technical aspects to government officials  
 
-![Fractional](https://github.com/alsichcan/GreatZipsa/assets/37293866/6260d1cc-af03-42d3-bb6a-c214632c8e1b)
+![Fractional2](https://github.com/alsichcan/GreatZipsa/assets/37293866/0b584cb5-4587-44ec-a4e8-f1a020f9932e)
 
 ## 🌐 Private Rental Deposit Guarantee Insurance  
 🔸Addressed the challenge of valuing new apartments/villas without transaction records, hindering rental deposit insurance enrollment, by developing a value estimation model based on diverse real estate data  
 🔸Launched a website offering a free rental deposit safety assessment, aiming to validate demand through the number of assessment requests
 
-![Group 508](https://github.com/alsichcan/GreatZipsa/assets/37293866/602d777b-1758-4b44-b91c-a322010f7db4)
+![Group 508](https://github.com/alsichcan/GreatZipsa/assets/37293866/45cc8d99-da4d-4331-a6d7-ba412a88dd8f)
 
 ## 🌐 Short-term Subletting Service  
 🔸Proposed a service to bridge the gap between students' short-term rental demand and landlords' long-term rental preference by subletting properties on a short-term basis after securing them on a long-term corporate lease  
@@ -37,7 +37,7 @@ Django-based Minimum Viable Products for PropTech Startup to address inefficient
 🔸Proposed a project to convert vacation officetels and residences into workcation centers to address the lack of appropriate facilities in the emerging workcation trend due to COVID-19  
 🔸Developed a webpage detailing the value proposition and various investment products, planning to validate demand through business plan requests and applications  
 
-![workcation](https://github.com/alsichcan/GreatZipsa/assets/37293866/61f57009-ce69-4748-89fa-bd6c4562f368)
+![workcation](https://github.com/alsichcan/GreatZipsa/assets/37293866/180fb214-fd83-4302-8d1f-89d3f733fccc)
 
 # [Kor]  
 ## 🌐 아파트 조각투자 플랫폼  
